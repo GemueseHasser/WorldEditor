@@ -1,0 +1,36 @@
+name: '${project.name}'
+description: '${project.description}'
+version: '${project.version}'
+load: 'POSTWORLD'
+author: 'JustChunks'
+authors: ['Jonas0206']
+website: '${project.url}'
+api-version: '1.8.8'
+main: '${project.groupId}.${project.artifactId}.${project.name}'
+depend: []
+softdepend: []
+loadbefore: []
+prefix: '${project.name}'
+
+commands:
+  /set:
+    usage: '</command> <id:subid>'
+    description: 'Man kann Blöcke setzten'
+  /pos1:
+    usage: '</command>'
+    description: 'Setzt die erste Position'
+  /pos2:
+    usage: '</command>'
+    description: 'Setzt die zweite Position'
+  /undo:
+    usage: '</command>'
+    description: 'Macht deine Letzte Aktion rückgängig'
+  /replace:
+    usage: '</command> <material | <oldMaterial newMaterial>'
+    description: 'Ersetzt Blöcke'
+  /expand:
+    usage: '</command> <vert>'
+    description: 'Man kann Bereiche einfacher markieren!'
+  /redo:
+    usage: '</command>'
+    description: 'Macht einen Undo rückgängig'
