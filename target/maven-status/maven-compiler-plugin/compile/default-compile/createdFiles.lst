@@ -1,10 +1,12 @@
 de/jonas/worldeditor/WorldEditor.class
 de/jonas/commands/Undo.class
-de/jonas/commands/Pos2.class
 de/jonas/commands/Redo.class
+de/jonas/util/Methods.class
+de/jonas/commands/Brush.class
+de/jonas/commands/Pos2.class
 de/jonas/listener/OnInteract.class
 de/jonas/commands/Replace.class
 de/jonas/commands/Set.class
 de/jonas/commands/Pos1.class
+de/jonas/commands/Wand.class
 de/jonas/commands/Expand.class
-de/jonas/util/Methods.class

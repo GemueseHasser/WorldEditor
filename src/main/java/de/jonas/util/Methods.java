@@ -386,4 +386,23 @@ public class Methods {
     public static void redo(Player p) {
         p.sendMessage(WorldEditor.prefix+"In Work! :D");
     }
+
+    public static void brush(Player p, int size, Material material) {
+        double x = p.getLocation().getX();
+        double y = p.getLocation().getY();
+        double z = p.getLocation().getZ();
+        float yaw = p.getLocation().getYaw();
+        float pitch = p.getLocation().getPitch();
+        Location loc = new Location(p.getWorld(), x, y, z, yaw, pitch);
+        for(Location LOC = loc; loc.getBlock().getType() == Material.AIR; z++) {
+            loc = new Location(p.getWorld(), x, y, z, yaw, pitch);
+        }
+        if(size < 10) {
+            if(size == 1) {
+                loc.getBlock().setType(material);
+            }
+        } else {
+            p.sendMessage(WorldEditor.prefix+"Bitte wähle eine Größe zwischen 1 und 10!");
+        }
+    }
 }

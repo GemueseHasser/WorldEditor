@@ -22,6 +22,8 @@ public class WorldEditor extends JavaPlugin {
         getCommand("/replace").setExecutor(new Replace());
         getCommand("/expand").setExecutor(new Expand());
         getCommand("/redo").setExecutor(new Redo());
+        getCommand("/brush").setExecutor(new Brush());
+        getCommand("/wand").setExecutor(new Wand());
 
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.registerEvents(new OnInteract(), this);

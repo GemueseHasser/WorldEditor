@@ -34,3 +34,9 @@ commands:
   /redo:
     usage: '</command>'
     description: 'Macht einen Undo rückgängig'
+  /brush:
+    usage: '</command>'
+    description: 'Setzt eine Brush'
+  /wand:
+    usage: '</command>'
+    description: 'Gibt dir das heilige Werkzeug xD'
