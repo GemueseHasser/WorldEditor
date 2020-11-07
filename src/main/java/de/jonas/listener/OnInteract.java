@@ -21,6 +21,7 @@ public class OnInteract implements Listener {
                     if (e.getClickedBlock() != null) {
                         e.setCancelled(true);
                         Methods.location2.put(p, e.getClickedBlock().getLocation());
+                        Methods.sendLavaParticles(e.getClickedBlock().getLocation());
                         p.sendMessage(WorldEditor.prefix + "Location 2 Set!");
                     }
                 }
@@ -28,6 +29,7 @@ public class OnInteract implements Listener {
                 if (p.getItemInHand().getType() == Material.DIAMOND_AXE) {
                     e.setCancelled(true);
                     Methods.location1.put(p, e.getClickedBlock().getLocation());
+                    Methods.sendLavaParticles(e.getClickedBlock().getLocation());
                     p.sendMessage(WorldEditor.prefix + "Location 1 Set!");
                 }
             }

@@ -1,6 +1,6 @@
 name: 'WorldEditor'
 description: 'Dies ist kein WorldEdit ;D'
-version: '1.0.0-SNAPSHOT'
+version: '1.0.1-SNAPSHOT'
 load: 'POSTWORLD'
 author: 'JustChunks'
 authors: ['Jonas0206']

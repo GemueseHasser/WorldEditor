@@ -1,6 +1,7 @@
 package de.jonas.util;
 
 import de.jonas.worldeditor.WorldEditor;
+import net.minecraft.server.v1_8_R3.EnumParticle;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -394,7 +395,7 @@ public class Methods {
         float yaw = p.getLocation().getYaw();
         float pitch = p.getLocation().getPitch();
         Location loc = new Location(p.getWorld(), x, y, z, yaw, pitch);
-        for(Location LOC = loc; loc.getBlock().getType() == Material.AIR; z++) {
+        for(Location LOC = loc; LOC.getBlock().getType() == Material.AIR; z++) {
             loc = new Location(p.getWorld(), x, y, z, yaw, pitch);
         }
         if(size < 10) {
@@ -404,5 +405,10 @@ public class Methods {
         } else {
             p.sendMessage(WorldEditor.prefix+"Bitte wähle eine Größe zwischen 1 und 10!");
         }
+    }
+
+    public static void sendLavaParticles(Location ClickedBlock) {
+        Particles particles = new Particles(EnumParticle.LAVA, ClickedBlock.add(0,1.25,0), true, 0.3f, 0.3f, 0.3f, 0, 15);
+        particles.sendAll();
     }
 }

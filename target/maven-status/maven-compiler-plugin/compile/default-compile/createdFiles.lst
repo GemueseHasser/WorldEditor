@@ -4,6 +4,7 @@ de/jonas/commands/Redo.class
 de/jonas/util/Methods.class
 de/jonas/commands/Brush.class
 de/jonas/commands/Pos2.class
+de/jonas/util/Particles.class
 de/jonas/listener/OnInteract.class
 de/jonas/commands/Replace.class
 de/jonas/commands/Set.class
